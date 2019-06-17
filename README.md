@@ -5,7 +5,7 @@ This is my submission for the Traffic Management Challenge of Grab AI for SEA 20
 Credits and acknowledgements:
 #I would like to thank Jason Tanuwijaya for his input and suggestions in the writing of this code.
 #For the Python script in particular, credits go to Jason Tanuwijaya for his Python help in debugging version problems in the Python code and for his assistance with Python in general.
-#Credits also go to DataCamp, whose machine learning and R data science lessons have served as great sources of inspiration and influence for my code for this problem. I have specifically indicated in code when they have been adapted from learning examples.
+#Credits also go to DataCamp, whose machine learning and R data science lessons have served as great sources of inspiration and influence for my code for this problem. I have specifically indicated in the scripts when code has been adapted from learning examples.
 
 There are three files in the repository, and should be run in the following order:
 
