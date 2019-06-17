@@ -44,17 +44,16 @@ coordinates <- cbind(x$lat,x$long)
 ##Scaling and centering
 coordinates <- as.data.frame(scale(coordinates, center = TRUE, scale = TRUE))
 
-#Generating scree plot to determine optimal number of clusters
+#Generating scree plot to determine optimal number of clusters (Credits to DataCamp's cluster analysis lessons for the code structure for elbow testing)
 a <- 0
 
-#For 1 to 15 cluster centers
 for (i in 1:15) {
   kmeanstesting <- kmeans(coordinates, centers = i, nstart = 20)
   a[i] <- kmeanstesting$tot.withinss
 }
 
-# Plot a scree plot to show the relationship between total within sum of squares and clusters
-plot(1:15, a, type = "b", 
+# Plot a scree plot to show the relationship between total within sum of squares and clusters (Credits to DataCamp's cluster analysis lessons for scree plot inspiration)
+plot(1:15, a, 
      xlab = "Cluster number", 
      ylab = "Total within group sum of squares")
 
