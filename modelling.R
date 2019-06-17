@@ -38,6 +38,6 @@ summary(bestmodel)
 stepwiseregressionpredicted <- predict(bestmodel,wrangled2)
 actual <- wrangled2$demand
 error <- actual - stepwiseregressionpredicted
-mean(abs(error))/mean(actual)
+mean(abs(error))/mean(actual) #Credits to DataCamp for inspiring the MAE method of testing accuracy
 
 #Unfortunately, the accuracy rate of my multiple linear regression model is poor. Nevertheless, this was an interesting experience in applying what I have learnt in online courses to a real situation, and motivates me to improve my data science skills further.
